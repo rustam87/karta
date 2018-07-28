@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru" class="fsvs">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="desktop.bundle.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__inner">
+                <div class="container container-header">
+                    <div class="col-xs-2"><a href="#slide-1" class="logo"></a></div>
+                    <div class="col-xs-8 text-center">
+                        <nav class="nav">
+                            <ul class="list-inline jsNav">
+                                <li class="hide"></li>
+                                <li><a href="#slide-2">правила</a></li>
+                                <li><a href="#slide-3">призы</a></li>
+                                <li><a href="#slide-4">победители</a></li>
+                                <li><a href="#slide-5">о кофе черная карта</a></li>
+                                <li><a href="#slide-6">обратная связь</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-2 text-right"><a href="#" data-toggle="modal" data-target=".jsModalCheck" class="button-load-check">загрузить чек</a><a href="#" data-toggle="modal" data-target=".jsModalRegistration" class="button-entry">Вход</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="fsvs-body">
+            <section class="fsvs-section fsvs-section-1">
+                <button class="button-audio jsAudioToggle"></button>
+                <table class="fsvs-section__table">
+                    <tr>
+                        <td>
+                            <div class="landing">
+                                <div class="landing__bg"></div>
+                                <table class="landing__table jsScaleHeight">
+                                    <tr>
+                                        <td> 
+                                            <div class="promo-text jsScaleContent">
+                                                <div class="promo-text__inner">
+                                                    <div class="promo-text__h2">Участвуй в акции<br>кофе черная карта<br>и выиграй</div>
+                                                    <div class="promo-text__h1">500 000</div>
+                                                    <div class="promo-text__h3">рублей</div>
+                                                    <div class="bird bird-1"></div>
+                                                    <div class="bird wrap">
+                                                        <div class="bird-2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 
+                                            <div class="cup jsScaleContent">
+                                                <div class="cup-airship"></div>
+                                                <div class="smoke"></div>
+                                                <div class="smoke-1"></div>
+                                                <div class="tape"></div>
+                                                <div class="sun"></div>
+                                                <div class="certificate"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="landing__bottom"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table><a href="#" data-toggle="modal" data-target=".jsModalCheck" class="button-get">участвовать</a>
+            </section>
+            <section class="fsvs-section fsvs-section-2">
+                <table class="fsvs-section__table">
+                    <tr>
+                        <td>
+                            <div class="rules">
+                                <div class="rules__inner">
+                                    <div class="rules-step">
+                                        <div class="rules-step__item rules-step__item_1">
+                                            <div class="rules-step__number">1</div>
+                                            <div class="rules-step__title">Купи кофе<br>Черная<br>карта</div>
+                                            <div class="rules-step__arrow rules-step__arrow_1"></div>
+                                        </div>
+                                        <div class="rules-step__item rules-step__item_2">
+                                            <div class="rules-step__number rules-step__number_2">2</div><a href="#" class="rules-step__title_link">Зарегистрируй</a>
+                                            <div class="rules-step__title">чек на сайте</div>
+                                            <div class="rules-step__text rules-step__text_red">И сохраняй его<br>до конца акции!</div>
+                                            <div class="rules-step__arrow rules-step__arrow_2"></div>
+                                        </div>
+                                        <div class="rules-step__item rules-step__item_3">
+                                            <div class="rules-step__number">3</div>
+                                            <div class="rules-step__title">Участвуй<br>в розыгрыше<br>каждый день</div><a href="#" class="rules-step__link">Юридические<br>правила акции</a>
+                                            <div class="rules-step__arrow rules-step__arrow_3"></div>
+                                        </div>
+                                        <div class="rules-step__item rules-step__item_4">
+                                            <div class="rules-step__number">4</div>
+                                            <div class="rules-step__title">Выигрывай<br><a href="#">призы</a><br>мечты </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="fsvs-section fsvs-section-3">
+                <table class="fsvs-section__table">
+                    <tr>
+                        <td>
+                            <div class="prizes">
+                                <div class="prizes__inner">
+                                    <div class="prizes__table jsPrizesTable">
+                                        <div class="prizes__cell jsScalePrizes">
+                                            <div class="prizes-month">
+                                                <div class="prizes-month__pic"></div>
+                                                <div class="prizes-month__content">
+                                                    <div class="prizes-month__title">500 000<br><span>рублей</span></div>
+                                                    <div class="prizes-month-timer">
+                                                        <div class="prizes-month-timer__title">До выбора победителя</div>
+                                                        <div class="prizes-month-timer__body">
+                                                            <div id="countdownMonth" class="prizes-month-timer__timer"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prizes-day">
+                                                <div class="prizes-day__content">
+                                                    <div class="prizes-day__title">Сертификаты<br>на 4000<br>рублей</div>
+                                                    <div class="prizes-day-timer">
+                                                        <div class="prizes-day-timer__title">До выбора победителя</div>
+                                                        <div class="prizes-day-timer__body">
+                                                            <div id="countdownDay" class="prizes-day-timer__timer"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="prizes-day__pic"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="fsvs-section fsvs-section-4">
+                <table class="fsvs-section__table">
+                    <tr>
+                        <td>
+                            <div class="winners">
+                                <div class="winners__inner">
+                                    <div class="winners-month">
+                                        <div class="winners-month__title">ежемесячные победители</div>
+                                        <div class="winners-month__item">
+                                            <div class="winners-month__date">Сентябрь</div>
+                                            <div class="winners-month__name">Константин<br>Константинопольский</div>
+                                            <div class="winners-month__price">500 000<br>рублей</div>
+                                        </div>
+                                        <div class="winners-month__item disabled">
+                                            <div class="winners-month__date">октябрь</div>
+                                            <div class="winners-month__name"></div>
+                                            <div class="winners-month__price">500 000<br>рублей</div>
+                                        </div>
+                                        <div class="winners-month__item disabled">
+                                            <div class="winners-month__date">октябрь</div>
+                                            <div class="winners-month__name"></div>
+                                            <div class="winners-month__price">500 000<br>рублей</div>
+                                        </div>
+                                    </div>
+                                    <div class="winners-day">
+                                        <div class="winners-day__title">ежедневные победители</div>
+                                        <div class="winners-day__head">
+                                            <div class="winners-day__row">
+                                                <div class="winners-day__cell winners-day__cell_1">день</div>
+                                                <div class="winners-day__cell winners-day__cell_2">сертификат Лэтуаль</div>
+                                                <div class="winners-day__cell winners-day__cell_3">сертификат Лэтуаль</div>
+                                            </div>
+                                        </div>
+                                        <div class="winners-day__body">
+                                            <div class="winners-day__scrollbar">
+                                                <div class="baron">
+                                                    <div class="baron__scroller scrollable">
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Марина<br>Акулич</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Александр<br>Иванов</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Константин<br>Константинопольский</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Константин<br>Константинопольский</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Константин<br>Константинопольский</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Константин<br>Константинопольский</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Марина<br>Акулич</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Александр<br>Иванов</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Константин<br>Константинопольский</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Константин<br>Константинопольский</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Константин<br>Константинопольский</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Константин<br>Константинопольский</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Марина<br>Акулич</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Александр<br>Иванов</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Константин<br>Константинопольский</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Константин<br>Константинопольский</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Константин<br>Константинопольский</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Константин<br>Константинопольский</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Марина<br>Акулич</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Александр<br>Иванов</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Константин<br>Константинопольский</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Константин<br>Константинопольский</div>
+                                                        </div>
+                                                        <div class="winners-day__row">
+                                                            <div class="winners-day__cell winners-day__cell_1">01.05</div>
+                                                            <div class="winners-day__cell winners-day__cell_2">Константин<br>Константинопольский</div>
+                                                            <div class="winners-day__cell winners-day__cell_3">Константин<br>Константинопольский</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="baron__track">
+                                                        <div class="baron__bar"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="fsvs-section fsvs-section-5">
+                <div class="about">
+                    <table class="fsvs-section__table">
+                        <tr>
+                            <td>
+                                <div class="about__inner">
+                                    <div class="about__content">
+                                        <div class="about__title">Черная Карта —<br>кофе, вдохновляющий<br>мечтать</div>
+                                        <div class="about__text">
+                                            <p>Наш кофе — это натуральные и селекционные кофейные сорта, выращенные в самых разных уголках мира. </p>
+                                            <p>Все виды кофе «Черная Карта» проходят процесс обработки и упаковки на самом современном производстве, чтобы вы могли насладиться чашечкой любимого напитка.</p>
+                                            <p>Кофе «Черная Карта» дарит вам неповторимые моменты, которые вы можете посвятить себе и своим мечтам.</p>
+                                            <p>Участвуя в промо «Мечта в твоих руках», вы получаете возможность выиграть приз на осуществление вашей заветной мечты</p>
+                                        </div><a href="#" class="about__button">Более подробная информация<br>на сайте www.chernaya-karta.ru</a>
+                                    </div>
+                                    <div class="about-slider">
+                                        <div class="owl-carousel jsSliderAbout">
+                                            <div class="about-slider__pic about-slider__pic_1"></div>
+                                            <div class="about-slider__pic about-slider__pic_2"></div>
+                                            <div class="about-slider__pic about-slider__pic_3"></div>
+                                            <div class="about-slider__pic about-slider__pic_4"></div>
+                                            <div class="about-slider__pic about-slider__pic_5"></div>
+                                            <div class="about-slider__pic about-slider__pic_6"></div>
+                                            <div class="about-slider__pic about-slider__pic_7"></div>
+                                            <div class="about-slider__pic about-slider__pic_8"></div>
+                                            <div class="about-slider__pic about-slider__pic_9"></div>
+                                            <div class="about-slider__pic about-slider__pic_10"></div>
+                                            <div class="about-slider__pic about-slider__pic_11"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="fsvs-section fsvs-section-6">
+                <div class="feedback">
+                    <table class="fsvs-section__table">
+                        <tr>
+                            <td>
+                                <div class="feedback__inner">
+                                    <form class="feedback__form form_feedback">
+                                        <div class="feedback__title">Свяжитесь с нами</div>
+                                        <div class="js-input input_state_error">
+                                            <input type="text" required placeholder="ИМЯ" class="form-control">
+                                        </div>
+                                        <div class="js-input input_state_error">
+                                            <input type="email" required placeholder="ВАШ E-MAIL" class="form-control">
+                                        </div>
+                                        <div class="js-input input_state_error">
+                                            <input type="text" required placeholder="ТЕМА" class="form-control">
+                                        </div>
+                                        <div class="js-input input_state_error">
+                                            <div class="form-control__label">Сообщение</div>
+                                            <textarea name="name" rows="5" cols="40" required class="form-control"></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-6"></div>
+                                            <div class="col-xs-6">
+                                                <div class="form-error">Поле город не заполнено<br>Поле телефон не заполнено</div>
+                                            </div>
+                                        </div>
+                                        <button class="button button-form feedback__button">отправить</button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <div tabindex="-1" class="modal fade modal-default jsModalRegistration">
+            <div class="modal-dialog">
+                <div class="modal-tabs jsModalTabs"><a href="#" class="modal-tabs__link active">Регистрация</a><a href="#" class="modal-tabs__link">Авторизация</a></div>
+                <div class="modal-body jsModalTabsContent">
+                    <div class="modal-tabs__content active modal-registration">
+                        <form>
+                            <div class="modal-container">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="js-input input_state_error">
+                                            <input type="text" required placeholder="Фамилия" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="js-input input_state_error">
+                                            <input type="text" required placeholder="Имя" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="js-input input_state_error">
+                                            <input type="text" required placeholder="Отчество" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="js-input">
+                                            <input type="text" required placeholder="Город" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="js-input">
+                                            <input type="text" required placeholder="Телефон" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="js-input input_state_error">
+                                            <input type="email" required placeholder="Электронная почта" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="js-input">
+                                            <input type="password" required placeholder="Пароль" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="js-input">
+                                            <input type="password" required placeholder="Пароль еще раз" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+                                        <div class="modal-error">Поле город не заполнено<br>Поле телефон не заполнено</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-modal__container">
+                                <button class="button-modal">зарегистрироваться</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-tabs__content modal-auth">
+                        <form>
+                            <div class="modal-container">
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <div class="js-input input_state_error">
+                                            <input type="email" required placeholder="Электронная почта" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4"><a href="#" data-dismiss="modal" data-toggle="modal" data-target=".jsModalRestorePassword" class="modal-restore">Забыли пароль?</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <div class="js-input">
+                                            <input type="password" required placeholder="Пароль" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"><span>запомнить<br>меня</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+                                        <div class="modal-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-modal__container">
+                                <button class="button-modal">войти</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" class="modal fade modal-default jsModalRestorePassword">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-check">
+                        <form>
+                            <div class="modal-container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="modal-title modal-title_restore">Восстановление пароля</div>
+                                        <div class="modal-subtitle modal-subtitle_restore">Введите электронную почту, указанную при регистрации</div>
+                                        <div class="js-input input_state_error">
+                                            <input type="email" required placeholder="Электронная почта" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+                                        <div class="modal-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-modal__container">
+                                <button class="button-modal">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" class="modal fade modal-default jsModalCheck">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-check">
+                        <form>
+                            <div class="modal-container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="modal-title">Регистрация чека</div>
+                                        <div class="modal-subtitle">выберите тип сертификата</div>
+                                        <div class="form-radio">
+                                            <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required> Летуаль</label>
+                                            <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required> sunlight</label>
+                                        </div>
+                                        <hr>
+                                        <div class="form-file">
+                                            <label for="exampleInputFile">Загрузите чек</label>
+                                            <input type="file" id="exampleInputFile" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+                                        <div class="modal-error">ошибка загрузки файла!<br>Не выбран тип сертификата</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-modal__container">
+                                <button class="button-modal">зарегистрировать чек</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" class="modal fade modal-default jsModalCheckSuccess">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-message">
+                        <form>
+                            <div class="modal-container">
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+                                        <div class="modal-message__title">Регистрация чека</div>
+                                        <div class="modal-message__table">
+                                            <div class="modal-message__text">Спасибо!<br>В ближайшее время мы обработаем<br>ваш чек и свяжемся с вами</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-modal__container">
+                                <button data-dismiss="modal" class="button-modal">ОК</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" class="modal fade modal-default jsModalError">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-message">
+                        <form>
+                            <div class="modal-container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="modal-message__table">
+                                            <div class="modal-message__text jsModalErrorText">Какая-то ошибка</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-modal__container">
+                                <button data-dismiss="modal" class="button-modal">ОК</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="node_modules/baron/baron.min.js"></script>
+        <script src="node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
+        <script src="desktop.bundle.js"></script>
+        <script>
+            var leftMonth = Number(new Date()) + 100;
+            var leftDay = Number(new Date()) + 2000;
+            
+            function initCountdownMonth() {
+                $('#countdownMonth').countdown(leftMonth, function(event) {
+                    var $this = $(this).html(event.strftime(''
+                        + '<span><span>%D</span> дней</span>'
+                        + '<span><span>%H</span> часов</span>'
+                        + '<span><span>%M</span> минут</span>'
+                        + '<span><span>%S</span> секунд</span>'));
+                }).on('finish.countdown', function(event) {
+                    leftMonth = Number(new Date()) + 30 * 24 * 60 * 60 * 1000; // месяц
+                    initCountdownMonth();
+                });
+            }
+                
+            function initCountdownDay() {
+                $('#countdownDay').countdown(leftDay, function(event) {
+                    var $this = $(this).html(event.strftime(''
+                        + '<span><span>%H</span> часов</span>'
+                        + '<span><span>%M</span> минут</span>'
+                        + '<span><span>%S</span> секунд</span>'));
+                }).on('finish.countdown', function(event) {
+                    leftDay = Number(new Date()) + 24 * 60 * 60 * 1000; // сутки
+                    initCountdownDay();
+                });
+            }
+            
+            initCountdownMonth();
+            initCountdownDay();
+        </script>
+    </body>
+</html>
